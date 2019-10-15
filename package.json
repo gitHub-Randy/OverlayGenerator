@@ -1,0 +1,44 @@
+{
+  "name": "overlaygenerator",
+  "version": "1.0.0",
+  "description": "Takes an image and video and creates one video of it where the image is overlayed on the video",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitHub-Randy/OverlayGenerator.git"
+  },
+  "author": "Randy Anft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitHub-Randy/OverlayGenerator/issues"
+  },
+  "homepage": "https://github.com/gitHub-Randy/OverlayGenerator#readme",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/runtime": "^7.6.2",
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "fluent-ffmpeg": "^2.1.2",
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^6.5.1",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
