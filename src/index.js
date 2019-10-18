@@ -1,9 +1,18 @@
 'use strict'
 
-import TestClass, { testClass  } from "./testClass";
 import InputChecker from "./inputChecker";
 
-let t = new TestClass("HEllovdgdsg Word");
+async function inputChecker(){
+    try{
+        let inputChecker = new InputChecker(`${process.cwd()}\\tests\\testVideo.mp4`, `${process.cwd()}\\tests\\testImage.png`, 0, 720/3*2, '0','39' );
 
-let inputChecker = new InputChecker();
-inputChecker.positionIsValid('./testVideo.mp4', './testImage.png');
+        let cI =   await inputChecker.checkInput();
+        console.log(cI);
+    
+    }catch(error){
+        console.log(error);
+    }     
+}
+
+inputChecker();
+   
