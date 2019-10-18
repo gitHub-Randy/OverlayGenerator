@@ -17,7 +17,7 @@ async function inputChecker(){
 async function Overlay(){
     try{
         let overlayer = new Overlayer(`${process.cwd()}\\tests\\testVideo.mp4`, `${process.cwd()}\\tests\\testImage2.png`, 0, 260, '5','39');
-        overlayer.executeCommand();
+        await overlayer.executeCommand();
     }catch(e){
         console.log(e);
 
